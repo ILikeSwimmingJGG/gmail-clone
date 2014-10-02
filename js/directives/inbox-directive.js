@@ -10,7 +10,6 @@ angular.module('emailApp').directive('inbox', function() {
       ctrl.messages = [];
 
 		  InboxFactory.getMessages().then(function(messages) {
-				console.log(messages);
 				ctrl.messages = messages;
 			});
 

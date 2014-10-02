@@ -1,4 +1,4 @@
-angular.module('emailApp', ['ngRoute']).config(function($routeProvider) {
+angular.module('emailApp', ['ngRoute', 'ngSanitize']).config(function($routeProvider) {
 	$routeProvider
 		.when('/inbox', {
 			templateUrl: 'views/inbox.html',

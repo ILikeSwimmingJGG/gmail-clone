@@ -4,7 +4,6 @@ angular.module('emailApp').factory('InboxFactory', function($http, $q, $location
 
   exports.goToMessage = function(id) {
     if(angular.isNumber(id)) {
-      console.log('inbox/email/' + id);
       $location.path('inbox/email/' + id);
     }
   };

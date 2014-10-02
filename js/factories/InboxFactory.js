@@ -3,6 +3,7 @@ angular.module('emailApp').factory('InboxFactory', function($http, $q, $location
   exports.messages = [];
 
   exports.goToMessage = function(id) {
+    // check to make sure the message id is a number
     if(angular.isNumber(id)) {
       $location.path('inbox/email/' + id);
     }
